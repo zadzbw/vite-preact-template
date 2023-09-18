@@ -2,6 +2,10 @@
 
 A vite template for creating a Preact App with typescript, tailwindcss, scss, eslint, prettier, vitest, husky and lint-staged.
 
+<p align="center">
+<img width="642" alt="image" src="https://github.com/zadzbw/vite-preact-template/assets/12731790/e0dd4d2b-4ce2-4334-b9a1-76ac6edea93c">
+</p>
+
 ## Features 🎸
 
 - [x] Preact as basic framework
