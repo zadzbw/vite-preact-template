@@ -7,8 +7,8 @@
   @apply h-36 p-6 transition-[filter] duration-300
   hover:drop-shadow-[0_0_32px_#646cffaa] hover:will-change-[filter];
 
-  &.react {
-    @apply animate-spin hover:drop-shadow-[0_0_32px_#61dafbaa];
+  &.preact {
+    @apply animate-spin hover:drop-shadow-[0_0_32px_#673ab8aa];
     animation-duration: 20s;
   }
 }

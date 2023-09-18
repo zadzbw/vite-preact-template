@@ -1,5 +1,5 @@
 import * as path from 'node:path'
-import reactSWC from '@vitejs/plugin-react-swc'
+import preact from '@preact/preset-vite'
 import { defineConfig, splitVendorChunkPlugin } from 'vite'
 
 const isDev = process.env.NODE_ENV === 'development'
@@ -10,7 +10,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  plugins: [reactSWC(), splitVendorChunkPlugin()],
+  plugins: [preact(), splitVendorChunkPlugin()],
   define: {
     __DEV__: isDev,
   },

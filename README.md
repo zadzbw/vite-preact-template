@@ -2,11 +2,10 @@
 
 A vite template for creating a Preact App with typescript, tailwindcss, scss, eslint, prettier, vitest, husky and lint-staged.
 
-<img width="960" alt="image" src="https://user-images.githubusercontent.com/12731790/234902079-70cad825-731e-449d-b0f3-c5af03d0040e.png">
-
 ## Features 🎸
 
 - [x] Preact as basic framework
+- [x] hooks and signals
 - [x] tailwindcss + scss for style
 - [x] prettier + eslint for code style
 - [x] vitest for unit test and component test

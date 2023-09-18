@@ -1,20 +1,14 @@
-import React, { useCallback, useState } from 'react'
+import { useSignal } from '@preact/signals'
+import { Button } from '@/components/Button'
 
 export const Counter = () => {
-  const [count, setCount] = useState(0)
+  const count = useSignal(0)
 
-  const handleClick = useCallback(() => {
-    setCount((v) => v + 1)
-  }, [])
+  const handleClick = () => {
+    count.value += 1
+  }
 
-  return (
-    <button
-      className="rounded-lg border border-transparent bg-button-bg px-4 py-2 font-medium transition-[border-color] duration-200
-                 hover:border-indigo-500
-                 dark:bg-dark-button-bg"
-      onClick={handleClick}
-    >
-      count is {count}
-    </button>
-  )
+  console.log('counter render')
+
+  return <Button onClick={handleClick}>count is {count}</Button>
 }

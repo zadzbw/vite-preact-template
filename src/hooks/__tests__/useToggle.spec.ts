@@ -1,6 +1,6 @@
 // @vitest-environment jsdom
 import { describe, it, expect } from 'vitest'
-import { useToggle } from '@/hooks'
+import { useToggle, useToggleWithSignal } from '@/hooks'
 import { act, renderHook } from '@/test/test-utils'
 
 describe('`useToggle` hooks test', () => {
@@ -17,5 +17,22 @@ describe('`useToggle` hooks test', () => {
       toggleValue()
     })
     expect(result.current.value).toBe(true)
+  })
+})
+
+describe('`useToggleWithSignal` hooks test', () => {
+  it('should get correct value and toggle it', () => {
+    const { result } = renderHook(() => useToggleWithSignal(true))
+    const { toggleValue, value } = result.current
+
+    expect(value.value).toBe(true)
+    act(() => {
+      toggleValue()
+    })
+    expect(value.value).toBe(false)
+    act(() => {
+      toggleValue()
+    })
+    expect(value.value).toBe(true)
   })
 })
