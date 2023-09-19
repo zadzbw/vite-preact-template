@@ -3,7 +3,7 @@
 A vite template for creating a Preact App with typescript, tailwindcss, scss, eslint, prettier, vitest, husky and lint-staged. Also support electron to create a desktop app.
 
 <p align="center">
-<img width="642" alt="image" src="https://github.com/zadzbw/vite-preact-template/assets/12731790/e0dd4d2b-4ce2-4334-b9a1-76ac6edea93c">
+<img width="912" alt="image" src="https://github.com/zadzbw/vite-preact-template/assets/12731790/ef423988-042c-4307-b985-2a2a7466af9d">
 </p>
 
 ## Features 🎸
