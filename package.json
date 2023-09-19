@@ -43,7 +43,6 @@
     "node": "18.15.0"
   },
   "dependencies": {
-    "@preact/compat": "^17.1.2",
     "preact": "^10.17.1",
     "tslib": "^2.5.0"
   },
